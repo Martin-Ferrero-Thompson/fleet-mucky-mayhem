@@ -1,15 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Vite</title>
-    <script type="module" src="./js/main.js"></script>
-  </head>
-  <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleet Mucky Mayhem</title>
+  <script type="module" src="./js/main.js"></script></head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Fleet Mucky Mayhem</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <a class="btn btn-primary ms-auto" href="#cta">Get Started</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main (Hero Section) -->
+  <main class="hero">
+    <div class="container">
+      <h1 class="hero__title">Fleet Mucky Mayhem</h1>
+      <p class="hero__description">Your one-stop solution for all fleet management needs.</p>
+      <p class="hero__description">Expert care for your fleet, ensuring maximum efficiency and minimum downtime.</p>
+      <p class="hero__description">Join us in revolutionizing fleet management with top-notch services.</p>
     </div>
-  </body>
+  </main>
+
+  <!-- About Us Section -->
+  <section id="about-us" class="about py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 about__column about__column--text">
+          <p class="about__text">At Fleet Mucky Mayhem, we understand the importance of keeping your fleet in top condition. Our team of experts works tirelessly to ensure that your vehicles are always ready for the road.</p>
+          <p class="about__text">Our services include regular maintenance, emergency repairs, and fleet optimization strategies that save you time and money.</p>
+          <p class="about__text">We are committed to providing the highest level of service and support, helping you manage your fleet with ease and confidence.</p>
+        </div>
+        <div class="col-12 col-md-6 about__column about__column--image">
+          <img src="your-image.jpg" alt="Fleet management image" class="about__image img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
 </html>
