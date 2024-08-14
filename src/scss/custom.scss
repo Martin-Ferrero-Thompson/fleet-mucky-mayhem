@@ -1,7 +1,134 @@
 // custom.scss
+:root {
+  --brand-color: hsl(45, 100%, 51%);
+  --brand-font: 'Urbanist', sans-serif;
+  --default-font: 'Roboto', sans-serif;
+}
+
+/* Applying the brand font to specific elements */
+.navbar-brand {
+  font-family: var(--brand-font);
+  color: var(--brand-color);
+}
+
+.hero__title {
+  font-family: var(--brand-font);
+  color: var(--brand-color);
+}
+
+/* Applying the default font to the body and general text */
+body {
+  font-family: var(--default-font);
+}
+
+p, h1, h2, h3, h4, h5, h6, .about__text {
+  font-family: var(--default-font);
+}
+
+/* Default nav-link styling */
+.navbar-nav .nav-link {
+  color: #000; /* Default text color */
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+/* Hover state: Change text color to brand color */
+.navbar-nav .nav-link:hover {
+  color: var(--brand-color);
+}
+
+/* Active state: Change background and text color */
+.navbar-nav .nav-link.active {
+  background-color: var(--brand-color); /* Background set to brand color */
+  color: #fff; /* Text color set to white */
+  border-radius: 0.25rem; /* Optional rounded corners */
+}
+
+/* Ensure active state persists after clicking */
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:active {
+  background-color: var(--brand-color);
+  color: #fff;
+}
+
+
+/* Optional: To ensure consistent appearance across all breakpoints */
+.navbar-nav .nav-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+
+/* Large Breakpoints (lg and above) */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+
+  .navbar-collapse {
+    top: auto;
+    right: auto;
+    left: auto;
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+/* Small Breakpoints (md and below) */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: 15px;
+    left: auto;
+    width: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+
+  .navbar-toggler {
+    position: relative;
+    z-index: 1051;
+  }
+
+  .navbar-collapse.collapse.show {
+    display: block;
+    position: absolute;
+    top: 100%; /* Right under the navbar */
+    right: 0;
+    left: auto;
+    width: auto; /* Make sure it's only as wide as needed */
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+    text-align: left;
+  }
+
+  .navbar-nav .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
 
 .hero {
-  background: radial-gradient(circle, rgba(255, 216, 155, 1) 0%, rgba(255, 108, 108, 1) 100%);
+  background: radial-gradient(circle, rgba(255, 108, 108, 1) 0%, rgba(255, 216, 155, 1)  100%);
   color: white;
   text-align: center;
   padding: 60px 20px;
@@ -39,3 +166,23 @@
     margin-bottom: 20px;
   }
 }
+
+.template-section {
+  background-color: #343a40; /* Dark grey background */
+  color: #fff; /* White text color */
+  padding: 4rem 0; /* Padding to give some space around the content */
+
+  &__header {
+    font-size: 2rem; /* Adjust the font size if needed */
+    margin-bottom: 1.5rem; /* Space between the header and the lead paragraph */
+  }
+
+  .lead {
+    margin-bottom: 1rem; /* Space between the lead paragraph and the first normal paragraph */
+  }
+
+  p {
+    margin-bottom: 1rem; /* Space between the paragraphs */
+  }
+}
+
