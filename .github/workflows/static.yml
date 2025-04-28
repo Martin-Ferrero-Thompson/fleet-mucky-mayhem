@@ -2,9 +2,9 @@
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch (usually main or master)
+  # Runs on pushes targeting the default branch
   push:
-    branches: ["main"] # Or "master", depending on your default branch name
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -30,17 +30,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4 # Use the latest major version
-
+        uses: actions/checkout@v4
       - name: Setup Pages
-        uses: actions/configure-pages@v5 # Use the latest major version
-
+        uses: actions/configure-pages@v5
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3 # Use the latest major version
+        uses: actions/upload-pages-artifact@v3
         with:
-          # Upload content from the '/public' directory
-          path: './public' # <-- *** This is the crucial part ***
-
+          # Upload entire repository
+          path: './public'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 # Use the latest major version
+        uses: actions/deploy-pages@v4
+
