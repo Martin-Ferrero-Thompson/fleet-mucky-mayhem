@@ -1,11 +1,19 @@
+// Import required Bootstrap modules
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 
 // Custom CSS Files
-@import "../scss/base/base.scss";
-@import "../scss/components/navbar.scss";
-@import "../scss/pages/hero.scss";
-@import "../scss/pages/contact-us.scss";
+@import "./base/base.scss";
+@import "./components/navbar.scss";
+@import "./pages/hero.scss";
+@import "./pages/contact-us.scss";
 
 // Featured Ride Font
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
