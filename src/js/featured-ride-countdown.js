@@ -1,4 +1,10 @@
-let countdownInterval;
+// Set target date (August 9, 2025 08:30:00)
+const targetDate = new Date(2025, 7, 9, 8, 30, 0).getTime();
+
+// Update the countdown every second
+let countdownInterval = setInterval(() => {
+  updateCountdown(targetDate);
+}, 1000);
 
 function updateCountdown(targetDate) {
   const now = new Date().getTime();
@@ -29,23 +35,18 @@ function updateCountdown(targetDate) {
   if (secondsElement) secondsElement.textContent = String(seconds).padStart(2, '0');
 }
 
-function displayTargetDate(targetDate, locale) {
-  const formattedDate = new Intl.DateTimeFormat(locale, {
+// Format and display the target date
+const rideDateElement = document.querySelector(".ride-date");
+if (rideDateElement) {
+  const formattedDate = new Intl.DateTimeFormat('en-GB', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
     hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric'
-  }).format(targetDate);
-
-  const rideDateElement = document.querySelector(".ride-date");
-  if (rideDateElement) rideDateElement.textContent = formattedDate;
+    minute: 'numeric'
+  }).format(new Date(targetDate));
+  rideDateElement.textContent = formattedDate;
 }
 
-const targetDate = new Date("2025-08-09T08:30:00");
-const locale = "en-GB";
-
-updateCountdown(targetDate.getTime());
-displayTargetDate(targetDate, locale);
-countdownInterval = setInterval(() => updateCountdown(targetDate.getTime()), 1000);
+// Initial update
+updateCountdown(targetDate);

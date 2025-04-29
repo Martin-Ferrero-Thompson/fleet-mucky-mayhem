@@ -131,23 +131,19 @@ a {
   transform: scale(1.1);
 }
 
-
 .featured-ride {
-  font-family: 'Roboto Mono' sans-serif;
-
+  font-family: 'Roboto Mono', sans-serif;
   width: 80%;
   max-width: 1440px;
-
   margin: 0 auto;
-
-  padding: 3em;
-
+  padding: 2rem;
   background-image: url('../img/Featured-DDOTTS-30.jpg');
   background-size: cover;
   background-position: center;
-  border-radius: 15px; 
-
-  color: black;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .ride-title {
@@ -155,6 +151,7 @@ a {
   font-size: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
+  color: black;
 }
 
 .ride-tagline {
@@ -163,6 +160,7 @@ a {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
   padding-bottom: 0.5rem;
+  color: black;
 }
 
 .ride-date {
@@ -171,6 +169,7 @@ a {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
   padding-bottom: 0.75rem;
+  color: black;
 }
 
 .ride-countdown-clock {
@@ -185,6 +184,7 @@ a {
   flex-direction: column;
   align-items: center;
   font-weight: bold;
+  color: black;
 }
 
 .clock-item {
@@ -197,11 +197,7 @@ a {
   text-align: center;
   color: var(--bs-warning);
   font-weight: bold;
-}
-
-.display-card div:first-child {
-  font-size: 1.1rem;
-  margin-bottom: 5px;
+  font-size: 2rem;
 }
 
 .ride-details {
@@ -211,6 +207,7 @@ a {
   text-align: center;
   padding-top: 1.5rem;
   padding-bottom: 0.75rem;
+  color: black;
 }
 
 .ride-details-button {
@@ -239,6 +236,12 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+  }
+
+  .clock-item {
+    min-width: 80px;
+    padding: 15px;
+    font-size: 1.5rem;
   }
 
   .ride-details-button {
