@@ -1,10 +1,13 @@
-# Corrected static.yaml (Includes build steps)
+# Corrected static.yaml (Includes build steps and scheduled trigger)
 name: Deploy static content to Pages
 
 on:
   push:
     branches: ["main"]
   workflow_dispatch:
+  # --- NEW: Scheduled trigger for every Tuesday at 10:00 CEST (08:00 UTC) ---
+  schedule:
+    - cron: '0 8 * * 2' # Minute 0, Hour 8 (UTC), Every Day of Month, Every Month, Day of Week 2 (Tuesday)
 
 permissions:
   contents: read
