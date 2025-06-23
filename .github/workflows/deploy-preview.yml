@@ -3,8 +3,8 @@ name: Deploy Preview to Pages
 
 on:
   push:
-    branches: ["develop"] # <--- Triggered by develop branch
-  workflow_dispatch: # Optional: if you want to manually trigger preview deployments
+    branches: ["develop"]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -12,13 +12,13 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages-preview" # Use a different concurrency group for preview if desired
-  cancel-in-progress: true # Often for previews, you want the latest, so cancel old ones
+  group: "pages-preview" # Using a different group name than main Pages
+  cancel-in-progress: true # Good for previews
 
 jobs:
-  deploy-preview: # Different job name
+  deploy-preview:
     environment:
-      name: github-pages # The environment name is the same, but deploys to the non-custom-domain URL
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
@@ -30,12 +30,14 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
+
       - name: Install dependencies
         run: npm ci
+
       - name: Build for Preview
         run: npm run build
         env:
-          VITE_PREVIEW_BUILD: 'true' # <--- KEY DIFFERENCE: Sets the env var for vite.config.js
+          VITE_PREVIEW_BUILD: 'true'
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
