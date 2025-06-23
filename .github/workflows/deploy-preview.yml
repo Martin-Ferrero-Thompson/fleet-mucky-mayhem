@@ -1,12 +1,10 @@
-# .github/workflows/static.yml (or rename to deploy-main.yml)
-name: Deploy Main to Pages (Custom Domain) # Updated name for clarity
+# .github/workflows/deploy-preview.yml
+name: Deploy Preview to Pages
 
 on:
   push:
-    branches: ["main"]
-  workflow_dispatch:
-  schedule:
-    - cron: '0 8 * * 2'
+    branches: ["develop"] # <--- Triggered by develop branch
+  workflow_dispatch: # Optional: if you want to manually trigger preview deployments
 
 permissions:
   contents: read
@@ -14,13 +12,13 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: "pages-preview" # Use a different concurrency group for preview if desired
+  cancel-in-progress: true # Often for previews, you want the latest, so cancel old ones
 
 jobs:
-  deploy:
+  deploy-preview: # Different job name
     environment:
-      name: github-pages
+      name: github-pages # The environment name is the same, but deploys to the non-custom-domain URL
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
@@ -34,14 +32,13 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
-      - name: Build for Main (Production) # Slightly more descriptive name for step
+      - name: Build for Preview
         run: npm run build
-        # No VITE_PREVIEW_BUILD env var here, so vite.config.js uses base: '/'
+        env:
+          VITE_PREVIEW_BUILD: 'true' # <--- KEY DIFFERENCE: Sets the env var for vite.config.js
 
-      # --- NEW RECOMMENDED STEP ---
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      # --------------------------
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
