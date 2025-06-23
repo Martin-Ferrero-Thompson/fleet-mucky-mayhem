@@ -1,12 +1,13 @@
-# .github/workflows/static.yml (or rename to deploy-main.yml)
-name: Deploy Main to Pages (Custom Domain) # Updated name for clarity
+# Corrected static.yaml (Includes build steps and scheduled trigger)
+name: Deploy static content to Pages
 
 on:
   push:
     branches: ["main"]
   workflow_dispatch:
+  # --- NEW: Scheduled trigger for every Tuesday at 10:00 CEST (08:00 UTC) ---
   schedule:
-    - cron: '0 8 * * 2'
+    - cron: '0 8 * * 2' # Minute 0, Hour 8 (UTC), Every Day of Month, Every Month, Day of Week 2 (Tuesday)
 
 permissions:
   contents: read
@@ -27,27 +28,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # ---- Builds the project ----
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 20 # Or your project's version
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
-      - name: Build for Main (Production) # Slightly more descriptive name for step
-        run: npm run build
-        # No VITE_PREVIEW_BUILD env var here, so vite.config.js uses base: '/'
+      - name: Build
+        run: npm run build # Creates the ./public directory with built files
 
-      # --- NEW RECOMMENDED STEP ---
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      # --------------------------
-
+      # ---- Uploads ONLY the built content from ./public ----
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './public'
+          path: './public' # Uploads the result of 'npm run build'
 
+      # ---- Deploys the uploaded artifact ----
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
