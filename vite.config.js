@@ -5,11 +5,11 @@ import { defineConfig } from 'vite';
 export default defineConfig(({ command, mode }) => {
   const repoName = process.env.GITHUB_REPOSITORY
     ? process.env.GITHUB_REPOSITORY.split('/')[1]
-    : ''; // This will be 'fleet-mucky-mayhem' during GitHub Actions runs
+    : ''; 
 
   let base = '/';
   if (process.env.VITE_PREVIEW_BUILD === 'true' && repoName) {
-    base = `/${repoName}/`; // e.g., /fleet-mucky-mayhem/
+    base = `/${repoName}/`; 
   }
 
   return {
@@ -19,8 +19,7 @@ export default defineConfig(({ command, mode }) => {
 
     build: {
       outDir: resolve(__dirname, 'public'), // Output to project_root/public/
-      emptyOutDir: true,
-      // rollupOptions can be added here if needed for more complex builds
+      emptyOutDir: true,      
     },
 
     server: {
