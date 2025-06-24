@@ -2,9 +2,9 @@
 name: Deploy Preview to Pages
 
 on:
-  push:
-    branches: ["develop"]
-  workflow_dispatch:
+  # push: # Temporarily comment out to disable automatic trigger on push
+  #   branches: ["develop"] # Ensure this line is also commented or removed if push is
+  workflow_dispatch: # Keep this for manual triggers
 
 permissions:
   contents: read
