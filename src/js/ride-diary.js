@@ -1,6 +1,6 @@
 function showAccordion(targetAccordionId, activeButtonId) {
   // Hide all accordions
-  const accordions = ['accordion2024', 'accordion2025', 'accordionRegular'];
+  const accordions = ['accordion2024', 'accordion2025', 'accordion2026', 'accordionRegular'];
   accordions.forEach((id) => {
     document.getElementById(id).classList.add('d-none');
   });
@@ -9,9 +9,10 @@ function showAccordion(targetAccordionId, activeButtonId) {
   document.getElementById(targetAccordionId).classList.remove('d-none');
 
   // Update button styles
-  const buttons = ['show2024', 'show2025', 'showRegular'];
-  buttons.forEach((id) => {
+  const primaryButtons = ['showRegular', 'showLonger'];
+  primaryButtons.forEach((id) => {
     const button = document.getElementById(id);
+    if (!button) return;
     if (id === activeButtonId) {
       button.classList.add('btn-warning');
       button.classList.remove('btn-secondary');
@@ -41,12 +42,16 @@ function collapseAllAccordionItems(accordionId) {
 }
 
 // Add event listeners for buttons
+document.getElementById('show2026').addEventListener('click', function () {
+  showAccordion('accordion2026', 'showLonger');
+});
+
 document.getElementById('show2025').addEventListener('click', function () {
-  showAccordion('accordion2025', 'show2025');
+  showAccordion('accordion2025', 'showLonger');
 });
 
 document.getElementById('show2024').addEventListener('click', function () {
-  showAccordion('accordion2024', 'show2024');
+  showAccordion('accordion2024', 'showLonger');
 });
 
 document.getElementById('showRegular').addEventListener('click', function () {
@@ -79,10 +84,11 @@ function handleAccordionToggle(accordionId) {
   });
 }
 
-// Apply the toggle handler to all three accordions
+// Apply the toggle handler to all accordions
+handleAccordionToggle('accordion2026');
 handleAccordionToggle('accordion2025');
 handleAccordionToggle('accordion2024');
 handleAccordionToggle('accordionRegular');
 
 // Initial state: Show the 2025 accordion but collapse all items
-showAccordion('accordion2025', 'show2025');
+showAccordion('accordion2025', 'showLonger');
