@@ -60,6 +60,14 @@ a {
   text-decoration: none;
 }
 
+/* Brand-colored highlight for active item in Longer Rides dropdown */
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item.active:hover,
+.dropdown-menu .dropdown-item.active:focus {
+  background-color: var(--bs-warning);
+  color: #000; /* ensure readable text on brand background */
+}
+
 /* Ensure all carousel images have the same height */
 .carousel-img {
   height: 400px; /* Adjust as needed */

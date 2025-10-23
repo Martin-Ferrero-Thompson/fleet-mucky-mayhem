@@ -26,6 +26,30 @@ function showAccordion(targetAccordionId, activeButtonId) {
   collapseAllAccordionItems(targetAccordionId);
 }
 
+// Update the Longer Rides dropdown to reflect the currently selected year
+// selectedYear: '2024' | '2025' | '2026' | null
+function updateLongerDropdownActive(selectedYear) {
+  const yearItemIds = ['show2024', 'show2025', 'show2026'];
+
+  yearItemIds.forEach((id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    // Clear any previous active/aria-current states
+    el.classList.remove('active');
+    el.removeAttribute('aria-current');
+  });
+
+  if (selectedYear) {
+    const activeId = `show${selectedYear}`;
+    const activeEl = document.getElementById(activeId);
+    // Only set active if the element exists and is not disabled (avoid highlighting disabled 2026)
+    if (activeEl && !activeEl.hasAttribute('disabled')) {
+      activeEl.classList.add('active');
+      activeEl.setAttribute('aria-current', 'true');
+    }
+  }
+}
+
 function collapseAllAccordionItems(accordionId) {
   const accordion = document.getElementById(accordionId);
   if (!accordion) return;
@@ -44,18 +68,23 @@ function collapseAllAccordionItems(accordionId) {
 // Add event listeners for buttons
 document.getElementById('show2026').addEventListener('click', function () {
   showAccordion('accordion2026', 'showLonger');
+  updateLongerDropdownActive('2026');
 });
 
 document.getElementById('show2025').addEventListener('click', function () {
   showAccordion('accordion2025', 'showLonger');
+  updateLongerDropdownActive('2025');
 });
 
 document.getElementById('show2024').addEventListener('click', function () {
   showAccordion('accordion2024', 'showLonger');
+  updateLongerDropdownActive('2024');
 });
 
 document.getElementById('showRegular').addEventListener('click', function () {
   showAccordion('accordionRegular', 'showRegular');
+  // Clear active year highlight when Regular Rides is selected
+  updateLongerDropdownActive(null);
 });
 
 // Ensure only one accordion item is expanded at a time
@@ -92,3 +121,4 @@ handleAccordionToggle('accordionRegular');
 
 // Initial state: Show the 2025 accordion but collapse all items
 showAccordion('accordion2025', 'showLonger');
+updateLongerDropdownActive('2025');
