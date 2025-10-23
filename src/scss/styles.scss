@@ -1,19 +1,11 @@
-// Import required Bootstrap modules
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/variables-dark";
-@import "bootstrap/scss/maps";
-@import "bootstrap/scss/mixins";
-@import "bootstrap/scss/utilities";
+/* Note: Bootstrap CSS is now included via prebuilt CSS (imported in JS),
+   so we no longer import Bootstrap SCSS here. */
 
-// Import all of Bootstrap's CSS
-@import "bootstrap/scss/bootstrap";
-
-// Custom CSS Files
-@import "./base/base.scss";
-@import "./components/navbar.scss";
-@import "./pages/hero.scss";
-@import "./pages/contact-us.scss";
+// Custom CSS Files (migrated to @use to avoid Sass @import deprecation)
+@use "./base/base.scss" as *;
+@use "./components/navbar.scss" as *;
+@use "./pages/hero.scss" as *;
+@use "./pages/contact-us.scss" as *;
 
 // Featured Ride Font
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
@@ -30,7 +22,11 @@
 .about-text {
   padding-top: 6vh;
   padding-bottom: 6vh;
-  @include media-breakpoint-up(md) {
+}
+
+/* Replace Bootstrap mixin with a plain media query (md breakpoint ≈ 768px) */
+@media (min-width: 768px) {
+  .about-text {
     padding-top: 10vh;
     padding-bottom: 15vh;
   }
