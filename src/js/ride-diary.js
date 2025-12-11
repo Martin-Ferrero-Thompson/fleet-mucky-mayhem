@@ -119,6 +119,6 @@ handleAccordionToggle('accordion2025');
 handleAccordionToggle('accordion2024');
 handleAccordionToggle('accordionRegular');
 
-// Initial state: Show the 2025 accordion but collapse all items
-showAccordion('accordion2025', 'showLonger');
-updateLongerDropdownActive('2025');
+// Initial state: Show the 2026 accordion but collapse all items
+showAccordion('accordion2026', 'showLonger');
+updateLongerDropdownActive('2026');

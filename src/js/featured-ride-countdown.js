@@ -1,5 +1,5 @@
-// Set target date (August 9, 2025 08:30:00)
-const targetDate = new Date(2025, 7, 9, 8, 30, 0).getTime();
+// Set target date (December 20, 2025 09:30:00)
+const targetDate = new Date(2025, 11, 20, 9, 30, 0).getTime();
 
 // Update the countdown every second
 let countdownInterval = setInterval(() => {

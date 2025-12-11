@@ -28,7 +28,7 @@ const updateCountdownDisplay = (days, hours, minutes, seconds) => {
  * Stops the countdown when the target date is reached.
  */
 const calculateAndDisplayCountdown = () => {
-    const futureDate = new Date("2025-12-09T19:00:00");
+    const futureDate = new Date("2025-12-20T09:30:00");
     const currentDate = new Date();
     let timeLeft = futureDate.getTime() - currentDate.getTime(); // Use getTime() for milliseconds
 
