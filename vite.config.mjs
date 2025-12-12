@@ -1,6 +1,7 @@
 // vite.config.mjs
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
+import viteImagemin from 'vite-plugin-imagemin';
 
 export default defineConfig(({ command, mode }) => {
   const repoName = process.env.GITHUB_REPOSITORY
@@ -16,6 +17,23 @@ export default defineConfig(({ command, mode }) => {
     root: resolve(__dirname, 'src'), // Your source index.html is in src/
 
     base: base, // Crucial for correct asset pathing in the built index.html
+
+    plugins: [
+      viteImagemin({
+        // Optimize JPEG images
+        mozjpeg: {
+          quality: 80, // Adjust quality (0-100, lower = smaller file)
+        },
+        // Optimize PNG images
+        optipng: {
+          optimizationLevel: 7, // 0-7, higher = better compression (slower)
+        },
+        // Generate WebP versions
+        webp: {
+          quality: 80, // WebP quality (0-100)
+        },
+      }),
+    ],
 
     build: {
       outDir: resolve(__dirname, 'public'), // Output to project_root/public/
