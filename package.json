@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite --config vite.config.mjs",
-    "build": "vite build --emptyOutDir --config vite.config.mjs",
-    "preview": "vite preview --config vite.config.mjs",
+    "dev": "bun --bun vite --config vite.config.mjs",
+    "build": "bun --bun vite build --emptyOutDir --config vite.config.mjs",
+    "preview": "bun --bun vite preview --config vite.config.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
