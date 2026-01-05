@@ -1,6 +1,6 @@
 function showAccordion(targetAccordionIds, activeButtonId) {
   // Hide all accordions
-  const accordions = ['accordion2024', 'accordion2025', 'accordion2026', 'accordionRegular'];
+  const accordions = ['accordion2025', 'accordion2026', 'accordionRegular'];
   accordions.forEach((id) => {
     document.getElementById(id).classList.add('d-none');
   });
@@ -63,7 +63,7 @@ document.getElementById('showLonger').addEventListener('click', function () {
 });
 
 document.getElementById('showArchived').addEventListener('click', function () {
-  showAccordion(['accordion2025', 'accordion2024'], 'showArchived');
+  showAccordion('accordion2025', 'showArchived');
 });
 
 // Ensure only one accordion item is expanded at a time
@@ -95,7 +95,6 @@ function handleAccordionToggle(accordionId) {
 // Apply the toggle handler to all accordions
 handleAccordionToggle('accordion2026');
 handleAccordionToggle('accordion2025');
-handleAccordionToggle('accordion2024');
 handleAccordionToggle('accordionRegular');
 
 // Initial state: Show the Regular Rides accordion
