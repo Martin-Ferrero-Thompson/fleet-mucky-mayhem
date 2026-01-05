@@ -1,15 +1,19 @@
-function showAccordion(targetAccordionId, activeButtonId) {
+function showAccordion(targetAccordionIds, activeButtonId) {
   // Hide all accordions
   const accordions = ['accordion2024', 'accordion2025', 'accordion2026', 'accordionRegular'];
   accordions.forEach((id) => {
     document.getElementById(id).classList.add('d-none');
   });
 
-  // Show the target accordion
-  document.getElementById(targetAccordionId).classList.remove('d-none');
+  // Show the target accordion(s)
+  // targetAccordionIds can be a string or an array of strings
+  const idsToShow = Array.isArray(targetAccordionIds) ? targetAccordionIds : [targetAccordionIds];
+  idsToShow.forEach((id) => {
+    document.getElementById(id).classList.remove('d-none');
+  });
 
   // Update button styles
-  const primaryButtons = ['showRegular', 'showLonger'];
+  const primaryButtons = ['showRegular', 'showLonger', 'showArchived'];
   primaryButtons.forEach((id) => {
     const button = document.getElementById(id);
     if (!button) return;
@@ -22,32 +26,16 @@ function showAccordion(targetAccordionId, activeButtonId) {
     }
   });
 
-  // Collapse all accordion items in the displayed accordion
-  collapseAllAccordionItems(targetAccordionId);
+  // Collapse all accordion items in the displayed accordion(s)
+  idsToShow.forEach((id) => {
+    collapseAllAccordionItems(id);
+  });
 }
 
-// Update the Longer Rides dropdown to reflect the currently selected year
-// selectedYear: '2024' | '2025' | '2026' | null
+// This function is no longer needed as we removed the dropdown structure
+// Keeping it as a no-op function in case it's referenced elsewhere
 function updateLongerDropdownActive(selectedYear) {
-  const yearItemIds = ['show2024', 'show2025', 'show2026'];
-
-  yearItemIds.forEach((id) => {
-    const el = document.getElementById(id);
-    if (!el) return;
-    // Clear any previous active/aria-current states
-    el.classList.remove('active');
-    el.removeAttribute('aria-current');
-  });
-
-  if (selectedYear) {
-    const activeId = `show${selectedYear}`;
-    const activeEl = document.getElementById(activeId);
-    // Only set active if the element exists and is not disabled (avoid highlighting disabled 2026)
-    if (activeEl && !activeEl.hasAttribute('disabled')) {
-      activeEl.classList.add('active');
-      activeEl.setAttribute('aria-current', 'true');
-    }
-  }
+  // No-op: dropdown structure has been removed
 }
 
 function collapseAllAccordionItems(accordionId) {
@@ -66,25 +54,16 @@ function collapseAllAccordionItems(accordionId) {
 }
 
 // Add event listeners for buttons
-document.getElementById('show2026').addEventListener('click', function () {
-  showAccordion('accordion2026', 'showLonger');
-  updateLongerDropdownActive('2026');
-});
-
-document.getElementById('show2025').addEventListener('click', function () {
-  showAccordion('accordion2025', 'showLonger');
-  updateLongerDropdownActive('2025');
-});
-
-document.getElementById('show2024').addEventListener('click', function () {
-  showAccordion('accordion2024', 'showLonger');
-  updateLongerDropdownActive('2024');
-});
-
 document.getElementById('showRegular').addEventListener('click', function () {
   showAccordion('accordionRegular', 'showRegular');
-  // Clear active year highlight when Regular Rides is selected
-  updateLongerDropdownActive(null);
+});
+
+document.getElementById('showLonger').addEventListener('click', function () {
+  showAccordion('accordion2026', 'showLonger');
+});
+
+document.getElementById('showArchived').addEventListener('click', function () {
+  showAccordion(['accordion2025', 'accordion2024'], 'showArchived');
 });
 
 // Ensure only one accordion item is expanded at a time
@@ -119,6 +98,5 @@ handleAccordionToggle('accordion2025');
 handleAccordionToggle('accordion2024');
 handleAccordionToggle('accordionRegular');
 
-// Initial state: Show the Regular Rides accordion and clear Longer Rides highlight
+// Initial state: Show the Regular Rides accordion
 showAccordion('accordionRegular', 'showRegular');
-updateLongerDropdownActive(null);
