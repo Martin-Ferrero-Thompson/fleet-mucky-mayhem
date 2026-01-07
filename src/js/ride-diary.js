@@ -1,6 +1,6 @@
 function showAccordion(targetAccordionIds, activeButtonId) {
-  // Hide all accordions
-  const accordions = ['accordion2025', 'accordion2026', 'accordionRegular'];
+  // Hide all accordions (now includes accordion2024)
+  const accordions = ['accordion2025', 'accordion2026', 'accordion2024', 'accordionRegular'];
   accordions.forEach((id) => {
     document.getElementById(id).classList.add('d-none');
   });
@@ -12,8 +12,8 @@ function showAccordion(targetAccordionIds, activeButtonId) {
     document.getElementById(id).classList.remove('d-none');
   });
 
-  // Update button styles
-  const primaryButtons = ['showRegular', 'showLonger', 'showArchived'];
+  // Update button styles for regular buttons
+  const primaryButtons = ['showRegular', 'showLonger'];
   primaryButtons.forEach((id) => {
     const button = document.getElementById(id);
     if (!button) return;
@@ -25,6 +25,18 @@ function showAccordion(targetAccordionIds, activeButtonId) {
       button.classList.remove('btn-warning');
     }
   });
+
+  // Update archived dropdown button style
+  const archivedDropdownBtn = document.getElementById('archivedDropdownBtn');
+  if (archivedDropdownBtn) {
+    if (activeButtonId === 'showArchived2025' || activeButtonId === 'showArchived2024') {
+      archivedDropdownBtn.classList.add('btn-warning');
+      archivedDropdownBtn.classList.remove('btn-secondary');
+    } else {
+      archivedDropdownBtn.classList.add('btn-secondary');
+      archivedDropdownBtn.classList.remove('btn-warning');
+    }
+  }
 
   // Collapse all accordion items in the displayed accordion(s)
   idsToShow.forEach((id) => {
@@ -62,8 +74,15 @@ document.getElementById('showLonger').addEventListener('click', function () {
   showAccordion('accordion2026', 'showLonger');
 });
 
-document.getElementById('showArchived').addEventListener('click', function () {
-  showAccordion('accordion2025', 'showArchived');
+// Add event listeners for archived rides dropdown items
+document.getElementById('showArchived2025').addEventListener('click', function (e) {
+  e.preventDefault(); // Prevent default anchor behavior
+  showAccordion('accordion2025', 'showArchived2025');
+});
+
+document.getElementById('showArchived2024').addEventListener('click', function (e) {
+  e.preventDefault(); // Prevent default anchor behavior
+  showAccordion('accordion2024', 'showArchived2024');
 });
 
 // Ensure only one accordion item is expanded at a time
@@ -95,6 +114,7 @@ function handleAccordionToggle(accordionId) {
 // Apply the toggle handler to all accordions
 handleAccordionToggle('accordion2026');
 handleAccordionToggle('accordion2025');
+handleAccordionToggle('accordion2024');
 handleAccordionToggle('accordionRegular');
 
 // Initial state: Show the Regular Rides accordion

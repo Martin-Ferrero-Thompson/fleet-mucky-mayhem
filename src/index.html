@@ -543,7 +543,16 @@
         <div class="text-center mb-4">
           <button id="showRegular" class="btn btn-secondary btn-lg me-2">Regular Rides</button>
           <button id="showLonger" class="btn btn-secondary btn-lg me-2">Longer Rides</button>
-          <button id="showArchived" class="btn btn-secondary btn-lg">Archived Rides</button>
+          <!-- Archived Rides Dropdown -->
+          <div class="btn-group">
+            <button id="archivedDropdownBtn" type="button" class="btn btn-secondary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Archived Rides
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#" id="showArchived2025">2025</a></li>
+              <li><a class="dropdown-item" href="#" id="showArchived2024">2024</a></li>
+            </ul>
+          </div>
         </div>
 
         <!-- 2026 Group -->
@@ -1792,9 +1801,11 @@
             </div>
           </div>
 
+        </div>
         <!-- End of 2025 Group-->
 
         <!-- 2024 Group -->
+        <div id="accordion2024" class="accordion accordion-flush text-dark text-start d-none">
 
           <!-- 26-Oct-24 | War of the Worlds -->
           <div class="accordion-item">
@@ -2458,9 +2469,9 @@
             </div>
           </div>
 
-        <!-- End of 2024 Group-->
- 
         </div>
+        <!-- End of 2024 Group-->
+
         <!-- End of Archived Rides Group-->
 
         <!-- Regular Rides Group -->
@@ -2651,7 +2662,7 @@
           </div>
 
         </div>
-        
+
         <!-- End of Regular Rides-->
 
       </div>
