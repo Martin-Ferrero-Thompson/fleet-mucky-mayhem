@@ -40,7 +40,7 @@
   <!-- Ensure Bootstrap Icons CSS is loaded -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
 
-  <script type="module" crossorigin src="/assets/index-DkIZYTuI.js"></script>
+  <script type="module" crossorigin src="/assets/index-Cw3SztF7.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-C8Pe8Fj8.css">
 </head>
 
@@ -538,11 +538,21 @@
         <div class="text-center mb-4">
           <button id="showRegular" class="btn btn-secondary btn-lg me-2">Regular Rides</button>
           <button id="showLonger" class="btn btn-secondary btn-lg me-2">Longer Rides</button>
-          <button id="showArchived" class="btn btn-secondary btn-lg">Archived Rides</button>
+          <!-- Archived Rides Dropdown -->
+          <div class="btn-group">
+            <button id="archivedDropdownBtn" type="button" class="btn btn-secondary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Archived Rides
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#" id="showArchived2025">2025</a></li>
+              <li><a class="dropdown-item" href="#" id="showArchived2024">2024</a></li>
+            </ul>
+          </div>
         </div>
 
         <!-- 2026 Group -->
         <div id="accordion2026" class="accordion accordion-flush text-dark text-start d-none">
+
           <!-- 21-Feb-26 | Lock, Stock and Barrel -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading2026-1">
@@ -1786,6 +1796,12 @@
             </div>
           </div>
 
+        </div>
+        <!-- End of 2025 Group-->
+
+        <!-- 2024 Group -->
+        <div id="accordion2024" class="accordion accordion-flush text-dark text-start d-none">
+
           <!-- 26-Oct-24 | War of the Worlds -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading2024-1">
@@ -2447,11 +2463,14 @@
               </div>
             </div>
           </div>
+
         </div>
+        <!-- End of 2024 Group-->
 
         <!-- End of Archived Rides Group-->
 
         <!-- Regular Rides Group -->
+
         <div id="accordionRegular" class="accordion accordion-flush text-dark text-start">
           <!-- General Information -->
           <div class="accordion-item">
@@ -2638,6 +2657,7 @@
           </div>
 
         </div>
+
         <!-- End of Regular Rides-->
 
       </div>
@@ -3249,7 +3269,7 @@
   <!-- Footer -->
   <footer class="footer text-center position-relative even-sections p-lg-4">
     <div class="container">
-      <p class="lead">Copyright &copy; 2025 <span class="brand-text">Fleet Mucky Mayhem</span> | v1.8.2 Designed &
+      <p class="lead">Copyright &copy; 2025 <span class="brand-text">Fleet Mucky Mayhem</span> | v1.8.3 Designed &
         Built by <span class="brand-text">The Spanish Mucky</span></p>
       <a href="#home" class="position-absolute bottom-0 end-0 p-3"
         aria-label="Navigate back to the top of the website.">
