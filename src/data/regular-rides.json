@@ -3,18 +3,5 @@
     "version": "1.0",
     "eventType": "Regular-Ride"
   },
-  "events": [
-    {
-      "id": "sunday-social-ride",
-      "title": "Sunday Social Ride",
-      "daysOfWeek": [0],
-      "startTime": "10:00",
-      "duration": "2-3 hours",
-      "meetPoint": {
-        "name": "Reading Road Canal Wharf",
-        "googleMapsUrl": "https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA"
-      },
-      "guidance": "Weekly social ride. Route varies—typically 15-20 miles on towpaths and quiet lanes. All abilities welcome."
-    }
-  ]
+  "events": []
 }
