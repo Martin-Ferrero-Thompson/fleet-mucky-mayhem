@@ -90,8 +90,13 @@ async function validate(): Promise<void> {
     }
 
     // 🟡 Handle different file structures
-    // longer-rides.json uses 'longerRides', others use 'events'
-    const detailEvents: DetailEvent[] = detailData.events || detailData.longerRides || [];
+    // longer-rides.json uses 'longerRides' + 'archivedRides', others use 'events'
+    let detailEvents: DetailEvent[] = detailData.events || detailData.longerRides || [];
+    
+    // 🟢 Include archived rides for longer-rides.json
+    if (detailData.archivedRides) {
+      detailEvents = [...detailEvents, ...detailData.archivedRides];
+    }
     
     // 🟢 Set: A collection that only stores unique values
     // Perfect for checking if an ID exists quickly

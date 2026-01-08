@@ -111,9 +111,15 @@ async function fetchEventDetails(eventId, eventType) {
   const response = await fetch(file);
   const data = await response.json();
 
-  // Handle longer-rides.json structure (has longerRides array)
+  // Handle longer-rides.json structure (has longerRides + archivedRides arrays)
   // 🟢 Beginner: Different JSON files may have different array names
-  const events = data.events || data.longerRides || [];
+  let events = data.events || data.longerRides || [];
+  
+  // Include archived rides for longer-rides.json
+  if (data.archivedRides) {
+    events = [...events, ...data.archivedRides];
+  }
+  
   return events.find(e => e.id === eventId);
 }
 
@@ -244,9 +250,15 @@ async function handleEventClick(info) {
       details: details
     };
 
-    // Enable add to calendar button
+    // 🟢 Beginner: Only show "Add to Calendar" for future events
+    // Past events don't need to be added to calendars
     if (addToCalendarBtn) {
-      addToCalendarBtn.style.display = 'inline-block';
+      const eventDate = info.event.start;
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const isPastEvent = eventDate < today;
+      
+      addToCalendarBtn.style.display = isPastEvent ? 'none' : 'inline-block';
     }
   } catch (error) {
     console.error('Error fetching event details:', error);
