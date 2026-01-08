@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "bun --bun vite --config vite.config.mjs",
-    "build": "bun --bun vite build --emptyOutDir --config vite.config.mjs",
+    "dev": "bun run validate:json && bun --bun vite --config vite.config.mjs",
+    "build": "bun run validate:json && bun --bun vite build --emptyOutDir --config vite.config.mjs",
     "preview": "bun --bun vite preview --config vite.config.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "validate:json": "bun run scripts/validate-events.ts"
   },
   "keywords": [],
   "author": "",
