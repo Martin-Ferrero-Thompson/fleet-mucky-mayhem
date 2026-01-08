@@ -134,10 +134,15 @@
   .modal-content {
     background-color: #1a1a1a;
     border: 1px solid #333;
+    color: #ccc; // Ensure text is visible on dark background
   }
 
   .modal-header {
     border-bottom-color: #333;
+  }
+
+  .modal-body {
+    color: #ccc; // Ensure modal body text is visible
   }
 
   .modal-title {
