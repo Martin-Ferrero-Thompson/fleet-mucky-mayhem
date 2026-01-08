@@ -228,15 +228,15 @@ function startCountdown(targetDate) {
 
 /**
  * Main initialization function
- * Fetches rides.json and sets up the "Where To Next" section
+ * Fetches longer-rides.json and sets up the "Where To Next" section
  */
 async function initWhereToNext() {
   try {
     // Fetch the rides data from JSON file
-    const response = await fetch("data/rides.json");
+    const response = await fetch("data/longer-rides.json");
 
     if (!response.ok) {
-      throw new Error(`Failed to fetch rides.json: ${response.status}`);
+      throw new Error(`Failed to fetch longer-rides.json: ${response.status}`);
     }
 
     const data = await response.json();

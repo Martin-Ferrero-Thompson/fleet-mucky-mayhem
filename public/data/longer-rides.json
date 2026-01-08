@@ -1,4 +1,8 @@
 {
+  "_schema": {
+    "version": "1.0",
+    "eventType": "Longer-Ride"
+  },
   "longerRides": [
     {
       "id": "lock-stock-and-barrel-2026-02-21",

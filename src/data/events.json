@@ -1,0 +1,59 @@
+{
+  "_schema": {
+    "version": "1.0",
+    "description": "Lightweight event index for calendar display. Full details in type-specific files."
+  },
+  "events": [
+    {
+      "id": "pub-quiz-2026-01-17",
+      "title": "Pub Quiz Night",
+      "date": "2026-01-17",
+      "startTime": "19:30",
+      "eventType": "Social",
+      "location": "The Mucky Duck"
+    },
+    {
+      "id": "intro-ride-2026-01-18",
+      "title": "New Year Intro Ride",
+      "date": "2026-01-18",
+      "startTime": "10:00",
+      "eventType": "Introductory-Ride",
+      "location": "Reading Road Canal Wharf"
+    },
+    {
+      "id": "sunday-social-ride",
+      "title": "Sunday Social Ride",
+      "daysOfWeek": [0],
+      "startTime": "10:00",
+      "startRecur": "2026-01-01",
+      "endRecur": "2026-12-31",
+      "duration": "03:00",
+      "eventType": "Regular-Ride",
+      "location": "Reading Road Canal Wharf"
+    },
+    {
+      "id": "lock-stock-and-barrel-2026-02-21",
+      "title": "Lock, Stock and Barrel",
+      "date": "2026-02-21",
+      "startTime": "09:30",
+      "eventType": "Longer-Ride",
+      "location": "Reading Road Canal Wharf"
+    },
+    {
+      "id": "war-of-the-worlds-2026-03-14",
+      "title": "War of the Worlds",
+      "date": "2026-03-14",
+      "startTime": "09:30",
+      "eventType": "Longer-Ride",
+      "location": "Reading Road Canal Wharf"
+    },
+    {
+      "id": "rags-to-riches-2026-04-11",
+      "title": "Rags to Riches",
+      "date": "2026-04-11",
+      "startTime": "09:30",
+      "eventType": "Longer-Ride",
+      "location": "Reading Road Canal Wharf"
+    }
+  ]
+}

@@ -252,9 +252,9 @@ function renderYearAccordion(rides, year, containerId, sortOrder = "newest") {
  */
 async function loadRidesFromJson() {
   try {
-    const response = await fetch("data/rides.json");
+    const response = await fetch("data/longer-rides.json");
     if (!response.ok) {
-      throw new Error(`Failed to load rides.json: ${response.status}`);
+      throw new Error(`Failed to load longer-rides.json: ${response.status}`);
     }
 
     const data = await response.json();
