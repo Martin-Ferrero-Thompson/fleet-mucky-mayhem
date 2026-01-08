@@ -2,6 +2,7 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import viteImagemin from 'vite-plugin-imagemin';
+import { cpSync } from 'fs';
 
 export default defineConfig(({ command, mode }) => {
   const repoName = process.env.GITHUB_REPOSITORY
@@ -33,7 +34,22 @@ export default defineConfig(({ command, mode }) => {
           quality: 80, // WebP quality (0-100)
         },
       }),
+      // Custom plugin to copy static assets (data/, img/) that are fetched at runtime
+      {
+        name: 'copy-static-assets',
+        closeBundle() {
+          const outDir = resolve(__dirname, 'public');
+          // Copy data folder (rides.json)
+          cpSync(resolve(__dirname, 'src/data'), resolve(outDir, 'data'), { recursive: true });
+          // Copy img folder (ride-maps, etc.)
+          cpSync(resolve(__dirname, 'src/img'), resolve(outDir, 'img'), { recursive: true });
+          console.log('✓ Copied static assets (data/, img/) to build output');
+        },
+      },
     ],
+
+    // Disable default publicDir since we're using a custom plugin
+    publicDir: false,
 
     build: {
       outDir: resolve(__dirname, 'public'), // Output to project_root/public/
