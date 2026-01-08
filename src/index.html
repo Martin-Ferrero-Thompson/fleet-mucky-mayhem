@@ -36,6 +36,7 @@
   <script defer type="module" src="js/sectionscroll.js"></script>
   <script defer type="module" src="js/utils.js"></script>
   <script defer type="module" src="js/where-to-next.js"></script>
+  <script defer type="module" src="js/event-calendar.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -85,6 +86,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#sponsors">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#event-calendar">Event Calendar</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#ride-diary">Ride Diary</a>
@@ -530,8 +534,59 @@
     </div>
   </section>
 
+  <!-- EVENT CALENDAR SECTION -->
+  <section id="event-calendar" class="odd-sections py-5">
+    <div class="container">
+      <h2 class="brand-text display-2 text-center mb-4">Event Calendar</h2>
+      
+      <!-- Legend with Filter Toggles -->
+      <div class="calendar-legend d-flex justify-content-center flex-wrap gap-3 mb-4">
+        <label class="legend-item filter-toggle">
+          <input type="checkbox" class="filter-checkbox" data-event-type="Social" checked>
+          <span class="legend-colour event-social"></span> Social
+        </label>
+        <label class="legend-item filter-toggle">
+          <input type="checkbox" class="filter-checkbox" data-event-type="Introductory-Ride" checked>
+          <span class="legend-colour event-introductory"></span> Introductory Ride
+        </label>
+        <label class="legend-item filter-toggle">
+          <input type="checkbox" class="filter-checkbox" data-event-type="Regular-Ride" checked>
+          <span class="legend-colour event-regular"></span> Regular Ride
+        </label>
+        <label class="legend-item filter-toggle">
+          <input type="checkbox" class="filter-checkbox" data-event-type="Longer-Ride" checked>
+          <span class="legend-colour event-longer"></span> Longer Ride
+        </label>
+      </div>
+      
+      <!-- Calendar Mount Point -->
+      <div id="calendar-mount"></div>
+    </div>
+  </section>
+
+  <!-- Event Detail Modal -->
+  <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="eventModalLabel">Event Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="eventModalBody">
+          <!-- Populated dynamically -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="addToCalendarBtn">
+            <i class="bi bi-calendar-plus"></i> Add to Calendar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Ride Diary Section -->
-  <section id="ride-diary" class="odd-sections">
+  <section id="ride-diary" class="even-sections">
     <div class="container-fluid d-flex align-items-center justify-content-center">
       <div class="container text-center">
         <h2 class="brand-text display-2 mb-4 text-center">Ride Diary</h2>
@@ -2668,7 +2723,7 @@
   </section>
 
   <!-- Photos -->
-  <section id="photos" class="even-sections">
+  <section id="photos" class="odd-sections">
     <div class="container-fluid d-flex align-items-center justify-content-center">
       <div class="container text-center">
         <h2 class="brand-text display-2 mb-4 text-center">Photos</h2>
@@ -2882,7 +2937,7 @@
   </section>
 
   <!-- FAQ Section -->
-  <section id="faq" class="odd-sections">
+  <section id="faq" class="even-sections">
     <div class="container-fluid d-flex align-items-center justify-content-center">
       <div class="container text-center">
         <h2 class="brand-text display-2 mb-4 text-center">Frequently Asked Questions</h2>
@@ -3221,7 +3276,7 @@
   </section>
 
   <!-- Contact Us Section -->
-  <section id="contact-us" class="even-sections">
+  <section id="contact-us" class="odd-sections">
     <div class="container variable-height-section">
       <div class="container text-center ">
         <div class="row align-items-center">
@@ -3250,7 +3305,7 @@
   </section>
 
   <!-- Group Ride Disclaimer -->
-  <section id="group-ride-disclaimer" class="odd-sections">
+  <section id="group-ride-disclaimer" class="even-sections">
     <div class="container-fluid d-flex align-items-center justify-content-center">
       <div class="container text-center">
         <h2 class="brand-text display-2 mb-4 text-center">Group Ride Disclaimer</h2>
