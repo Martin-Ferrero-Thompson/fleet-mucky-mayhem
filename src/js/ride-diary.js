@@ -267,16 +267,16 @@ async function loadRidesFromJson() {
       }
     }
 
-    // Render archived rides by year (newest first)
+    // Render archived rides by year (chronological order)
     if (data.archivedRides) {
       const rides2025 = data.archivedRides.filter((r) => r.year === 2025);
       const rides2024 = data.archivedRides.filter((r) => r.year === 2024);
 
       if (rides2025.length > 0) {
-        renderYearAccordion(rides2025, 2025, "accordion2025", "newest");
+        renderYearAccordion(rides2025, 2025, "accordion2025", "chronological");
       }
       if (rides2024.length > 0) {
-        renderYearAccordion(rides2024, 2024, "accordion2024", "newest");
+        renderYearAccordion(rides2024, 2024, "accordion2024", "chronological");
       }
     }
 
