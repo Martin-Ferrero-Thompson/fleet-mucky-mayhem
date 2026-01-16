@@ -56,6 +56,38 @@
       "location": "Reading Road Canal Wharf"
     },
     {
+      "id": "burnt-cakes-2026-05-02",
+      "title": "Burnt Cakes",
+      "date": "2026-05-02",
+      "startTime": "09:00",
+      "eventType": "Longer-Ride",
+      "location": "Reading Road Canal Wharf"
+    },
+    {
+      "id": "city-slickers-2026-06-13",
+      "title": "City Slickers",
+      "date": "2026-06-13",
+      "startTime": "09:00",
+      "eventType": "Longer-Ride",
+      "location": "Reading Road Canal Wharf"
+    },
+    {
+      "id": "ddotts-2026-07-04",
+      "title": "DDOTTS - Daft Day Out To The Seaside",
+      "date": "2026-07-04",
+      "startTime": "08:30",
+      "eventType": "Longer-Ride",
+      "location": "Guildford Railway Station"
+    },
+    {
+      "id": "lunch-at-the-palace-2026-08-01",
+      "title": "Lunch at the Palace",
+      "date": "2026-08-01",
+      "startTime": "09:00",
+      "eventType": "Longer-Ride",
+      "location": "Reading Road Canal Wharf"
+    },
+    {
       "id": "through-the-looking-glass-2025-09-20",
       "title": "Through the Looking Glass",
       "date": "2025-09-20",
