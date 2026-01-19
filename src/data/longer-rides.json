@@ -135,14 +135,21 @@
       "startTime": "09:00",
       "destination": "Winchester",
       "distanceMiles": 40,
-      "overallTime": "6 hours",
+      "overallTime": "8 hours",
       "routeMapImage": "img/ride-maps/burnt_cakes.png",
       "meetPoint": {
         "name": "Reading Road Canal Wharf",
         "googleMapsUrl": "https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA",
         "note": "NOTE EARLIER START"
       },
-      "guidance": "Towpath, cross country, some tarmac. Return by train Winchester to Fleet. This is certainly a challenging ride on old drovers tracks. Make sure you have plenty of fluids and snacks",
+      "guidance": [
+        "You need to be carrying an absolute minimum of 2.5 itres of fluids  (Ideally 3 litres)...please do NOT turn up with any less than this  ...if you do not have enough fluids at the start, we will kindly ask you NOT to join the ride.",
+        "Travelling on towpath, cross country, some tarmac, Three Castle Path, Abbotstone Down cycle trail, Oxdrove Way, Wayfarer's Walk, Allan King Way, South Downs Way.",
+        "We pass Cheesefoot Head where Boomtown festival is held. The scenery is spectacular!",
+        "It is at least 6 hours riding to Winchester, there are no planned stops on the way, you need to carry enough fluids and food for this testing ride.",
+        "Return by train Winchester to Fleet. This is certainly a challenging ride on old drovers tracks.",
+        "Make sure you have plenty of fluids and snacks"
+      ],
       "notes": [],
       "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
     }

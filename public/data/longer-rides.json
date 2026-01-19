@@ -59,9 +59,9 @@
       "photosUrl": "https://app.box.com/s/g11rapmp6fh8z6isod45wjmofxb6incf"
     },
     {
-      "id": "city-slickers-2026-tbd",
+      "id": "city-slickers-2026-06-13",
       "title": "City Slickers",
-      "date": null,
+      "date": "2026-06-13",
       "year": 2026,
       "startTime": "09:00",
       "destination": "London",
@@ -78,28 +78,9 @@
       "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
     },
     {
-      "id": "alice-in-wonderland-2026-tbd",
-      "title": "Alice in Wonderland",
-      "date": null,
-      "year": 2026,
-      "startTime": "09:00",
-      "destination": "Guildford",
-      "distanceMiles": 38,
-      "overallTime": "7 hours",
-      "routeMapImage": "img/ride-maps/alice-in-wonderland.jpg",
-      "meetPoint": {
-        "name": "Reading Road Canal Wharf",
-        "googleMapsUrl": "https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA",
-        "note": "NOTE EARLIER START"
-      },
-      "guidance": "Mixed riding including Tarmac, a fun challenging ride! This is not the usual near flat ride! Clockwise loop to Guildford, via Ash, Pirbright, Guildford. Lunch stop at Watts Gallery. Then onto Farnham and Fleet. Make sure you have plenty of fluids and snacks",
-      "notes": [],
-      "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
-    },
-    {
-      "id": "lunch-at-the-palace-2026-tbd",
+      "id": "lunch-at-the-palace-2026-08-01",
       "title": "Lunch at the Palace",
-      "date": null,
+      "date": "2026-08-01",
       "year": 2026,
       "startTime": "09:00",
       "destination": "Hampton Court",
@@ -116,28 +97,9 @@
       "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
     },
     {
-      "id": "through-the-looking-glass-2026-tbd",
-      "title": "Through the Looking Glass",
-      "date": null,
-      "year": 2026,
-      "startTime": "09:00",
-      "destination": "Reverse Guildford loop+",
-      "distanceMiles": 53,
-      "overallTime": "8 hours",
-      "routeMapImage": "img/ride-maps/through-the-looking-glass.jpg",
-      "meetPoint": {
-        "name": "Reading Road Canal Wharf",
-        "googleMapsUrl": "https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA",
-        "note": "NOTE EARLIER START"
-      },
-      "guidance": "",
-      "notes": [],
-      "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
-    },
-    {
-      "id": "ddotts-2026-tbd",
+      "id": "ddotts-2026-07-04",
       "title": "DDOTTS - Daft Day Out To The Seaside",
-      "date": null,
+      "date": "2026-07-04",
       "year": 2026,
       "startTime": "08:30",
       "destination": "Guildford to Shoreham-by-Sea",
@@ -166,21 +128,28 @@
       "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
     },
     {
-      "id": "burnt-cakes-2026-tbd",
+      "id": "burnt-cakes-2026-05-02",
       "title": "Burnt Cakes",
-      "date": null,
+      "date": "2026-05-02",
       "year": 2026,
       "startTime": "09:00",
       "destination": "Winchester",
       "distanceMiles": 40,
-      "overallTime": "6 hours",
+      "overallTime": "8 hours",
       "routeMapImage": "img/ride-maps/burnt_cakes.png",
       "meetPoint": {
         "name": "Reading Road Canal Wharf",
         "googleMapsUrl": "https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA",
         "note": "NOTE EARLIER START"
       },
-      "guidance": "Towpath, cross country, some tarmac. Return by train Winchester to Fleet. This is certainly a challenging ride on old drovers tracks. Make sure you have plenty of fluids and snacks",
+      "guidance": [
+        "You need to be carrying an absolute minimum of 2.5 itres of fluids  (Ideally 3 litres)...please do NOT turn up with any less than this  ...if you do not have enough fluids at the start, we will kindly ask you NOT to join the ride.",
+        "Travelling on towpath, cross country, some tarmac, Three Castle Path, Abbotstone Down cycle trail, Oxdrove Way, Wayfarer's Walk, Allan King Way, South Downs Way.",
+        "We pass Cheesefoot Head where Boomtown festival is held. The scenery is spectacular!",
+        "It is at least 6 hours riding to Winchester, there are no planned stops on the way, you need to carry enough fluids and food for this testing ride.",
+        "Return by train Winchester to Fleet. This is certainly a challenging ride on old drovers tracks.",
+        "Make sure you have plenty of fluids and snacks"
+      ],
       "notes": [],
       "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
     }
