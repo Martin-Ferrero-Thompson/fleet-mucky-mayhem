@@ -78,25 +78,6 @@
       "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
     },
     {
-      "id": "alice-in-wonderland-2026-tbd",
-      "title": "Alice in Wonderland",
-      "date": null,
-      "year": 2026,
-      "startTime": "09:00",
-      "destination": "Guildford",
-      "distanceMiles": 38,
-      "overallTime": "7 hours",
-      "routeMapImage": "img/ride-maps/alice-in-wonderland.jpg",
-      "meetPoint": {
-        "name": "Reading Road Canal Wharf",
-        "googleMapsUrl": "https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA",
-        "note": "NOTE EARLIER START"
-      },
-      "guidance": "Mixed riding including Tarmac, a fun challenging ride! This is not the usual near flat ride! Clockwise loop to Guildford, via Ash, Pirbright, Guildford. Lunch stop at Watts Gallery. Then onto Farnham and Fleet. Make sure you have plenty of fluids and snacks",
-      "notes": [],
-      "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
-    },
-    {
       "id": "lunch-at-the-palace-2026-08-01",
       "title": "Lunch at the Palace",
       "date": "2026-08-01",
@@ -112,25 +93,6 @@
         "note": "NOTE EARLIER START"
       },
       "guidance": "Towpath out to Weybridge, Wey navigation to Thames path, then to Hampton Court for Lunch and coffee. Make sure you have plenty of fluids and snacks. Plenty of opt out points - Brookwood (14 miles), Woking (18 miles), Weybridge (24 Miles), Hampton Court/Surbiton (32 Miles)",
-      "notes": [],
-      "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
-    },
-    {
-      "id": "through-the-looking-glass-2026-tbd",
-      "title": "Through the Looking Glass",
-      "date": null,
-      "year": 2026,
-      "startTime": "09:00",
-      "destination": "Reverse Guildford loop+",
-      "distanceMiles": 53,
-      "overallTime": "8 hours",
-      "routeMapImage": "img/ride-maps/through-the-looking-glass.jpg",
-      "meetPoint": {
-        "name": "Reading Road Canal Wharf",
-        "googleMapsUrl": "https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA",
-        "note": "NOTE EARLIER START"
-      },
-      "guidance": "",
       "notes": [],
       "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
     },
