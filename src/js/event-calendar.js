@@ -46,6 +46,26 @@ let calendarInstance = null;
 let allEvents = [];
 
 /**
+ * Format guidance for display - handles both string and array formats
+ *
+ * 🟢 Beginner: Guidance can be stored as string or array for cleaner data,
+ * but displayed consistently
+ */
+function formatGuidance(guidance) {
+  if (!guidance) {
+    return '';
+  }
+  
+  // If guidance is an array, join with line breaks for calendar display
+  if (Array.isArray(guidance)) {
+    return guidance.join('\n');
+  }
+  
+  // If guidance is a string, use it as-is
+  return guidance;
+}
+
+/**
  * Transforms events.json data into FullCalendar event format
  *
  * 🟡 Intermediate: This function handles two types of events:
@@ -199,7 +219,7 @@ function renderModalContent(event, details) {
 
     // Guidance/info (all event types can have this)
     if (details.guidance) {
-      content += `<p><strong>Info:</strong> ${details.guidance}</p>`;
+      content += `<p><strong>Info:</strong> ${formatGuidance(details.guidance)}</p>`;
     }
   } else {
     // Fallback if details couldn't be loaded
@@ -313,7 +333,7 @@ function generateICalFile() {
   // Build description
   let description = '';
   if (details?.guidance) {
-    description = details.guidance;
+    description = formatGuidance(details.guidance);
   }
   if (eventType === 'Longer-Ride' && details) {
     if (details.destination) {

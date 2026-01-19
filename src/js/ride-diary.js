@@ -108,6 +108,26 @@ function createNotesHtml(notes) {
 }
 
 /**
+ * Generate the guidance section HTML from string or array of guidance
+ *
+ * 🟢 Beginner: Guidance can be stored as string or array for cleaner data,
+ * but displayed with paragraph formatting for arrays
+ */
+function createGuidanceHtml(guidance) {
+  if (!guidance) {
+    return "";
+  }
+
+  // If guidance is an array, format each item as a paragraph
+  if (Array.isArray(guidance)) {
+    return guidance.map((item) => `<p>${item}</p>`).join("");
+  }
+
+  // If guidance is a string, use it as-is
+  return guidance;
+}
+
+/**
  * Generate the photos section HTML
  */
 function createPhotosHtml(ride) {
@@ -137,7 +157,7 @@ function createAccordionItem(ride, index, year) {
   const cssClass = `rides${String(year).slice(-2)}`;
 
   const notesHtml = createNotesHtml(ride.notes);
-  const guidanceHtml = ride.guidance || "";
+  const guidanceHtml = createGuidanceHtml(ride.guidance);
 
   return `
     <!-- ${formatDate(ride.date)} | ${ride.title} -->
