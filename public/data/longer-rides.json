@@ -59,75 +59,6 @@
       "photosUrl": "https://app.box.com/s/g11rapmp6fh8z6isod45wjmofxb6incf"
     },
     {
-      "id": "city-slickers-2026-06-13",
-      "title": "City Slickers",
-      "date": "2026-06-13",
-      "year": 2026,
-      "startTime": "09:00",
-      "destination": "London",
-      "distanceMiles": 56,
-      "overallTime": "7-8 hours",
-      "routeMapImage": "img/ride-maps/city-slickers.jpg",
-      "meetPoint": {
-        "name": "Reading Road Canal Wharf",
-        "googleMapsUrl": "https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA",
-        "note": "NOTE EARLIER START"
-      },
-      "guidance": "Towpath out to Weybridge, Wey navigation to Thames path. Lunch stop at Hampton Court, then into London, the last few miles are slow going and some of there is a very small amount on road. Train back from Waterloo. Make sure you have plenty of fluids and snacks. Plenty of opt out points - Brookwood (14 miles), Woking (18 miles), Weybridge (24 Miles), Hampton Court/Surbiton (32 Miles)",
-      "notes": [],
-      "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
-    },
-    {
-      "id": "lunch-at-the-palace-2026-08-01",
-      "title": "Lunch at the Palace",
-      "date": "2026-08-01",
-      "year": 2026,
-      "startTime": "09:00",
-      "destination": "Hampton Court",
-      "distanceMiles": 64,
-      "overallTime": "8 hours",
-      "routeMapImage": "img/ride-maps/lunch-at-the-palace.png",
-      "meetPoint": {
-        "name": "Reading Road Canal Wharf",
-        "googleMapsUrl": "https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA",
-        "note": "NOTE EARLIER START"
-      },
-      "guidance": "Towpath out to Weybridge, Wey navigation to Thames path, then to Hampton Court for Lunch and coffee. Make sure you have plenty of fluids and snacks. Plenty of opt out points - Brookwood (14 miles), Woking (18 miles), Weybridge (24 Miles), Hampton Court/Surbiton (32 Miles)",
-      "notes": [],
-      "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
-    },
-    {
-      "id": "ddotts-2026-07-04",
-      "title": "DDOTTS - Daft Day Out To The Seaside",
-      "date": "2026-07-04",
-      "year": 2026,
-      "startTime": "08:30",
-      "destination": "Guildford to Shoreham-by-Sea",
-      "distanceMiles": 76,
-      "overallTime": "10 hours",
-      "routeMapImage": "img/ride-maps/DDOTTS.png",
-      "meetPoint": {
-        "name": "Guildford Railway Station, Main entrance",
-        "googleMapsUrl": "https://maps.app.goo.gl/yP8CiCuyrYRzgzus7"
-      },
-      "guidance": "Old disused railway line route, minimal tarmac, mainly flat going. Three options for rides: 1. Ice Cream Run: Ride to Southwater Country Park Cafe - 21 miles each way (42 total). 2. Sails and Rails: Ride to Shoreham by Sea, see the sails/boats and catch the train back, approx 38 miles. 3. Full Monty: Guildford to Shoreham-by-sea and return - 76 miles! Many options for shorter rides, cafe stop at 21 miles, thus folks can return from there. Various options for trains back to Guildford. All can be catered for!",
-      "guidanceDetails": [
-        "Ensure that you are carrying enough water, aim for 0.5 litres per hour of riding, ideally have 2 litres of water.",
-        "Ensure that you have suitable snacks and take them onboard at every opportunity, do not wait until you are hungry!",
-        "We need to maintain a reasonable pace of 10mph all the way there and back, otherwise we are riding in the dark...and no, we do NOT want to be riding in the dark!"
-      ],
-      "schedule": [
-        "Depart 08:30",
-        "Approx 10:45 Coffee stop, Southwater Country park (21 miles). Coffee, cake and ensure that you FILL your water bottles",
-        "13:00 Sat on the beach at Shoreham-by-Sea and eating. Please bring picnic lunch, we do not go to a cafe.",
-        "14:00 or earlier, we need to leave the coast and head back",
-        "15:40 Coffee stop, Southwater Country park ..it closes at 16:00! Again FILL your water bottles",
-        "18:30 Fingers crossed we are back in Guildford!"
-      ],
-      "notes": [],
-      "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
-    },
-    {
       "id": "burnt-cakes-2026-05-02",
       "title": "Burnt Cakes",
       "date": "2026-05-02",
@@ -152,6 +83,151 @@
       ],
       "notes": [],
       "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
+    },
+    {
+      "id": "jabberwocky-2026-05-23",
+      "title": "Jabberwocky",
+      "date": "2026-05-23",
+      "year": 2026,
+      "startTime": "09:00",
+      "destination": "Guildford and Wey Navigation",
+      "distanceMiles": 50,
+      "overallTime": "8 hours",
+      "routeMapImage": [],
+      "meetPoint": {
+        "name": "Reading Road Canal Wharf",
+        "googleMapsUrl": "https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA"
+      },
+      "guidance": [
+        "Mixed riding including Tarmac, a fun challenging ride!  This is not the usual near flat ride!",
+        "We head to Guildford, via Ash, Pirbright. A mix of towpath, tarmac, cross country.",
+        "Lunch, coffee at Yvonne Arnaud theatre cafe",
+        "Then follow the Wey Navigation (approx 12 miles) towards Weybridge, pick up Basingstoke canal for the return.  Stop for Coffee at the Light Box, Woking",
+        "Make sure you have plenty of fluids and snacks",
+        "Opt out points - Guildford (18 miles), Woking (36 miles)"
+      ],
+      "notes": [],
+      "photosUrl": []
+    },
+    {
+      "id": "city-slickers-2026-06-13",
+      "title": "City Slickers",
+      "date": "2026-06-13",
+      "year": 2026,
+      "startTime": "09:00",
+      "destination": "London",
+      "distanceMiles": 57,
+      "overallTime": "7.5 hours",
+      "routeMapImage": "img/ride-maps/city-slickers.jpg",
+      "meetPoint": {
+        "name": "Reading Road Canal Wharf",
+        "googleMapsUrl": "https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA",
+        "note": "NOTE EARLIER START"
+      },
+      "guidance": [
+        "Towpath out to Weybridge, Wey navigation to Thames path. Lunch stop at Hampton Court, then into London, the last few miles are slow going and some of there is a very small amount on road. Train back from Waterloo. Make sure you have plenty of fluids and snacks.",
+        "Plenty of opt out points - Brookwood (14 miles), Woking (18 miles), Weybridge (24 Miles), Hampton Court/Surbiton (32 Miles)"
+      ],
+      "notes": [],
+      "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
+    },
+    {
+      "id": "ddotts-2026-07-04",
+      "title": "DDOTTS - Daft Day Out To The Seaside",
+      "date": "2026-07-04",
+      "year": 2026,
+      "startTime": "08:30",
+      "destination": "Guildford to Shoreham-by-Sea",
+      "distanceMiles": 76,
+      "overallTime": "10 hours",
+      "routeMapImage": "img/ride-maps/DDOTTS.png",
+      "meetPoint": {
+        "name": "Guildford Railway Station, Main entrance",
+        "googleMapsUrl": "https://maps.app.goo.gl/yP8CiCuyrYRzgzus7",
+        "note": "NOTE EARLIER START AND DIFFERENT START POINT"
+      },
+      "guidance": [
+        "Old disused railway line route, minimal tarmac, mainly flat going. ",
+        "Three options for rides:",
+        "  1. Ice Cream Run: Ride to Southwater Country Park Cafe - 21 miles each way (42 total).",
+        "  2. Sails and Rails: Ride to Shoreham by Sea, see the sails/boats and catch the train back, approx 38 miles.",
+        "  3. Full Monty: Guildford to Shoreham-by-sea and return - 76 miles!",
+        "Many options for shorter rides, cafe stop at 21 miles, thus folks can return from there. Various options for trains back to Guildford. All can be catered for!",
+        "Things to note:",
+        "> Ensure that you are carrying enough water, aim for 0.5 litres per hour of riding, ideally have 2 litres of water.",
+        "> Ensure that you have suitable snacks and take them onboard at every opportunity, do not wait until you are hungry!",
+        "> We need to maintain a reasonable pace of 10mph all the way there and back, otherwise we are riding in the dark...and no, we do NOT want to be riding in the dark!",
+        "> The schedule:",
+        "  - Depart 08:30",
+        "  - Approx 10:45 Coffee stop, Southwater Country park (21 miles). Coffee, cake and ensure that you FILL your water bottles",
+        "  - 13:00 Sat on the beach at Shoreham-by-Sea and eating. Please bring picnic lunch, we do not go to a cafe.",
+        "  - 14:00 or earlier, we need to leave the coast and head back",
+        "  - 15:40 Coffee stop, Southwater Country park ..it closes at 16:00! Again FILL your water bottles",
+        "  - 18:30 Fingers crossed we are back in Guildford!",
+        "Be prepared, have plenty of water and snacks. The Full Monty is 8 hours of riding and 10 hours start to finish.",
+        "If you are considering opting out at any point, please ensure you know the nearest Railway stations etc and how to get back to Guildford."
+      ],
+      "notes": [],
+      "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
+    },
+    {
+      "id": "lunch-at-the-palace-2026-08-01",
+      "title": "Lunch at the Palace",
+      "date": "2026-08-01",
+      "year": 2026,
+      "startTime": "09:00",
+      "destination": "Hampton Court",
+      "distanceMiles": 64,
+      "overallTime": "8 hours",
+      "routeMapImage": "img/ride-maps/lunch-at-the-palace.png",
+      "meetPoint": {
+        "name": "Reading Road Canal Wharf",
+        "googleMapsUrl": "https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA",
+        "note": "NOTE EARLIER START"
+      },
+      "guidance": [
+        "Towpath out to Weybridge, Wey navigation to Thames path, then to Hampton Court for Lunch and coffee.",
+        "Make sure you have plenty of fluids and snacks.",
+        "Plenty of opt out points - Brookwood (14 miles), Woking (18 miles), Weybridge (24 Miles), Hampton Court/Surbiton (32 Miles)"
+      ],
+      "notes": [],
+      "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
+    },
+    {
+      "id": "war-of-the-worlds-2026-09-26",
+      "title": "War of the Worlds",
+      "date": "2026-09-26",
+      "year": 2026,
+      "startTime": "09:30",
+      "destination": "Woking",
+      "distanceMiles": 36,
+      "overallTime": "5 hours",
+      "routeMapImage": "img/ride-maps/war-of-the-worlds.jpg",
+      "meetPoint": {
+        "name": "Reading Road Canal Wharf",
+        "googleMapsUrl": "https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA"
+      },
+      "guidance": "Easy going along towpath, H.G. Wells statue, Martian Alien Tripod sculpture, Cafe at The Lightbox Art Gallery.",
+      "notes": [],
+      "photosUrl": "https://app.box.com/s/u5sz0hy6c6au68ssj1w5k81o2ckj5sdh"
+    },    
+    {
+      "id": "lock-stock-and-barrel-2026-10-17",
+      "title": "Lock, Stock and Barrel",
+      "date": "2026-10-17",
+      "year": 2026,
+      "startTime": "09:30",
+      "destination": "Bisley, National Shooting Centre (NSC)",
+      "distanceMiles": 27,
+      "overallTime": "3.5 hours",
+      "routeMapImage": "img/ride-maps/lock-stock-and-barrel.jpg",
+      "meetPoint": {
+        "name": "Reading Road Canal Wharf",
+        "googleMapsUrl": "https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA"
+      },
+      "guidance": "Easy going along towpath, Cafe at NSC, Bisley.",
+      "notes": [],
+      "photosUrl": "https://app.box.com/s/mh9gribpzx08fvdjnwrc4d8pmw9uu3o8"
     }
   ],
   "archivedRides": [
