@@ -74,7 +74,7 @@
         "note": "NOTE EARLIER START"
       },
       "guidance": [
-        "You need to be carrying an absolute minimum of 2.5 itres of fluids  (Ideally 3 litres)...please do NOT turn up with any less than this  ...if you do not have enough fluids at the start, we will kindly ask you NOT to join the ride.",
+        "You need to be carrying an absolute minimum of 2.5 Litres of fluids  (Ideally 3 litres)...please do NOT turn up with any less than this  ...if you do not have enough fluids at the start, we will kindly ask you NOT to join the ride.",
         "Travelling on towpath, cross country, some tarmac, Three Castle Path, Abbotstone Down cycle trail, Oxdrove Way, Wayfarer's Walk, Allan King Way, South Downs Way.",
         "We pass Cheesefoot Head where Boomtown festival is held. The scenery is spectacular!",
         "It is at least 6 hours riding to Winchester, there are no planned stops on the way, you need to carry enough fluids and food for this testing ride.",
@@ -82,7 +82,7 @@
         "Make sure you have plenty of fluids and snacks"
       ],
       "notes": [],
-      "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
+      "photosUrl": "https://app.box.com/s/96w2tcq1fze7g8pzi2tti4us1w4q17x3"
     },
     {
       "id": "jabberwocky-2026-05-23",
@@ -107,7 +107,9 @@
         "Opt out points - Guildford (18 miles), Woking (36 miles)"
       ],
       "notes": [],
-      "photosUrl": []
+      "photosUrl": [
+        "https://app.box.com/s/gc245750rnjhvd0orhznkxdlr19fs50p"
+      ]
     },
     {
       "id": "city-slickers-2026-06-13",
@@ -129,7 +131,7 @@
         "Plenty of opt out points - Brookwood (14 miles), Woking (18 miles), Weybridge (24 Miles), Hampton Court/Surbiton (32 Miles)"
       ],
       "notes": [],
-      "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
+      "photosUrl": "https://app.box.com/s/5tc7qy9i3ub56gpm6y9gal7x27e8x7at"
     },
     {
       "id": "ddotts-2026-07-04",
@@ -168,7 +170,30 @@
         "If you are considering opting out at any point, please ensure you know the nearest Railway stations etc and how to get back to Guildford."
       ],
       "notes": [],
-      "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
+      "photosUrl": "https://app.box.com/s/gfkf8ix5kqwougtlctinz0881o8hoe8i"
+    },
+    {
+      "id": "marmalade-sandwich-2026-08-29",
+      "title": "Marmalade Sandwich",
+      "date": "2026-08-29",
+      "year": 2026,
+      "startTime": "09:30",
+      "destination": "Newbury",
+      "distanceMiles": 42,
+      "overallTime": "6 hours",
+      "routeMapImage": "img/ride-maps/lunch-at-the-palace.png",
+      "meetPoint": {
+        "name": "Reading",
+        "googleMapsUrl": "https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA",
+        "note": "Meet in Reading...Details to below"
+      },
+      "guidance": [
+        "Setting off through Reading onto the Kennet canal, we follow this out of Reading quickly into open countryside, round sailing lakes, past Theale and Woolhampton before heading into Newbury proper.",
+        "Canal towpath with varied terrain, from tarmac to ungraded bumpy fields, and a mix of landscape from shaded woods to broad open fields, with red kites wheeling round looking for prey.",
+        "It is around 2.5 hours riding to Newbury with no planned cafe stops on the way, with a stop planned at Newbury as we come off the canal, before turning round and heading for home."
+      ],
+      "notes": [],
+      "photosUrl": "https://app.box.com/s/23nb4ga0b6r30rw60l1v9tlo3jaj34bb"
     },
     {
       "id": "lunch-at-the-palace-2026-08-01",
@@ -191,7 +216,7 @@
         "Plenty of opt out points - Brookwood (14 miles), Woking (18 miles), Weybridge (24 Miles), Hampton Court/Surbiton (32 Miles)"
       ],
       "notes": [],
-      "photosUrl": "https://app.box.com/s/8mqv8gzaw2dbvaxe5l90tkrycbsi3qrv"
+      "photosUrl": "https://app.box.com/s/cg0xogfvppq4at6206wz2zwfc9tu1gij"
     },
     {
       "id": "war-of-the-worlds-2026-09-26",
@@ -209,8 +234,8 @@
       },
       "guidance": "Easy going along towpath, H.G. Wells statue, Martian Alien Tripod sculpture, Cafe at The Lightbox Art Gallery.",
       "notes": [],
-      "photosUrl": "https://app.box.com/s/u5sz0hy6c6au68ssj1w5k81o2ckj5sdh"
-    },    
+      "photosUrl": "https://app.box.com/s/6v8glpyoab278vx16s1v3f3uhjnkb62f"
+    },
     {
       "id": "lock-stock-and-barrel-2026-10-17",
       "title": "Lock, Stock and Barrel",
@@ -227,7 +252,7 @@
       },
       "guidance": "Easy going along towpath, Cafe at NSC, Bisley.",
       "notes": [],
-      "photosUrl": "https://app.box.com/s/mh9gribpzx08fvdjnwrc4d8pmw9uu3o8"
+      "photosUrl": "https://app.box.com/s/mmbst4de8uo3mu4vex1ntno5j547i8vg"
     }
   ],
   "archivedRides": [
