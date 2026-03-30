@@ -3,21 +3,5 @@
     "version": "1.0",
     "eventType": "Introductory-Ride"
   },
-  "events": [
-    {
-      "id": "intro-ride-2026-01-18",
-      "title": "New Year Intro Ride",
-      "date": "2026-01-18",
-      "year": 2026,
-      "startTime": "10:00",
-      "meetPoint": {
-        "name": "Reading Road Canal Wharf",
-        "googleMapsUrl": "https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA"
-      },
-      "distanceMiles": 8,
-      "overallTime": "1.5 hours",
-      "description": "A gentle introduction ride for newcomers to Fleet Mucky Mayhem. Perfect for those new to off-road cycling.",
-      "notes": []
-    }
-  ]
+  "events": []
 }

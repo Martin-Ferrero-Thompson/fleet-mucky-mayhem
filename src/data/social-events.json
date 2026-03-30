@@ -3,19 +3,5 @@
     "version": "1.0",
     "eventType": "Social"
   },
-  "events": [
-    {
-      "id": "pub-quiz-2026-01-17",
-      "title": "Pub Quiz Night",
-      "date": "2026-01-17",
-      "year": 2026,
-      "startTime": "19:30",
-      "location": {
-        "name": "The Mucky Duck",
-        "googleMapsUrl": "https://maps.app.goo.gl/example"
-      },
-      "description": "Join us for a fun evening of trivia and good company at our local pub.",
-      "notes": []
-    }
-  ]
+  "events": []
 }

@@ -7,7 +7,7 @@
  */
 
 // Default fallback image when no route map is provided
-const FALLBACK_MAP_IMAGE = "img/ride-maps/no-map-provided.jpg";
+const FALLBACK_MAP_IMAGE = "img/ride-maps/no-map-provided.png";
 
 /**
  * DOM element references for updating the "Where To Next" section
@@ -256,6 +256,7 @@ async function initWhereToNext() {
     // Log success for debugging
     if (nextRide) {
       console.log(`Where To Next: Showing "${nextRide.title}" on ${nextRide.date}`);
+      console.log(`Where To Next: Showing Map: "${elements.routeMap.src}"`);
     } else {
       console.log("Where To Next: No upcoming rides found, showing TBD");
     }
