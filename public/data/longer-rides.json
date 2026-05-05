@@ -81,14 +81,18 @@
         "note": "NOTE EARLIER START"
       },
       "guidance": [
-        "You need to be carrying an absolute minimum of 2.5 Litres of fluids  (Ideally 3 litres)...please do NOT turn up with any less than this  ...if you do not have enough fluids at the start, we will kindly ask you NOT to join the ride.",
-        "Travelling on towpath, cross country, some tarmac, Three Castle Path, Abbotstone Down cycle trail, Oxdrove Way, Wayfarer's Walk, Allan King Way, South Downs Way.",
-        "We pass Cheesefoot Head where Boomtown festival is held. The scenery is spectacular!",
+        "You need to be carrying an absolute minimum of 3 Litres of fluids... please do NOT turn up with any less than this... if you do not have enough fluids at the start, we will kindly ask you NOT to join the ride.",
+        "Travelling on towpath, cross country, some tarmac, Three Castle Path, Abbotstone Down cycle trail, Oxdrove Way, Wayfarer's Walk, Allan King Way, South Downs Way. We pass Cheesefoot Head where Boomtown festival is held. The scenery is spectacular!",
         "It is at least 6 hours riding to Winchester, there are no planned stops on the way, you need to carry enough fluids and food for this testing ride.",
         "Return by train Winchester to Fleet. This is certainly a challenging ride on old drovers tracks.",
         "Make sure you have plenty of fluids and snacks"
       ],
-      "notes": [],
+      "notes": [
+        "8 set out, one arrived needing extra air in tyres (tubeless set up). The weather was good, cool to start, but warmed up and we just beat the rain to Winchester. ",
+        "Someone fell into nettles, got both feet wet in one of the only puddles and also broke a spoke!  Thankfully everyone carried enough fluids and food... well done everyone!",
+        "We arrived in Winchester approx 15.15.  all very tired in the cafe, after eating and coffee, headed for the train, back in Fleet after 17:15... it was raining.",
+        "6 hours 15 mins overall ride time and 8 hours 15 mins out and back."
+      ],
       "photosUrl": "https://app.box.com/s/96w2tcq1fze7g8pzi2tti4us1w4q17x3"
     },
     {
@@ -100,7 +104,7 @@
       "destination": "Guildford and Wey Navigation",
       "distanceMiles": 50,
       "overallTime": "8 hours",
-      "routeMapImage": ["img/ride-maps/no-map-provided.png"],
+      "routeMapImage": ["img/ride-maps/jabberwocky.jpeg"],
       "meetPoint": {
         "name": "Reading Road Canal Wharf",
         "googleMapsUrl": "https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA"
