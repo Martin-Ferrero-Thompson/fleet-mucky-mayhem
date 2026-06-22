@@ -140,9 +140,9 @@
       "date": "2026-06-13",
       "year": 2026,
       "startTime": "09:00",
-      "destination": "London",
+      "destination": "London - Waterloo Station",
       "distanceMiles": 57,
-      "overallTime": "7.5 hours",
+      "overallTime": "9 hours",
       "routeMapImage": "img/ride-maps/city-slickers.jpg",
       "meetPoint": {
         "name": "Reading Road Canal Wharf",
@@ -150,10 +150,20 @@
         "note": "NOTE EARLIER START"
       },
       "guidance": [
-        "Towpath out to Weybridge, Wey navigation to Thames path. Lunch stop at Hampton Court, then into London, the last few miles are slow going and some of there is a very small amount on road. Train back from Waterloo. Make sure you have plenty of fluids and snacks.",
+        "Towpath out to Weybridge, Wey navigation to Thames path. Lunch stop at Hampton Court, then into London, the last few miles are slow going and some of there is a very small amount on road. Train back from Waterloo.",
+        "Make sure you have plenty of fluids (2 litres min) and snacks.",
         "Plenty of opt out points - Brookwood (14 miles), Woking (18 miles), Weybridge (24 Miles), Hampton Court/Surbiton (32 Miles)"
       ],
-      "notes": [],
+      "notes": [
+        "09:00 Depart!",
+        "15 set out (1 was late as usual), a few were only planning to do part of the route, 1 exited at Bisley, the next at Woking. 2 others had planned to head home from Woking, but got convinced to go to Weybridge... and once at Weybridge, they were persuaded to join us for lunch at the Dish Cafe, Hampton Court! :)",
+        "11:00 Arrived at Woking, a comfort break for anyone who needed it.",
+        "12:45 Arrived at Dish Cafe, Hampton Court... 13 for lunch!",
+        "14:00 Departed Hampton Court, 2 headed to the train station, 11 continued on.",
+        "17:00’ish we arrived at Waterloo Station... much discussion about train tickets and train times... one misunderstanding, but nothing too serious. No direct trains back to Fleet due to Engineering works around the New Malden area, so a very, very slow train to Woking (nearly an hour)... change at Woking, then on to Fleet... finally home about 19:00... somewhat later than expected, but all okay!",
+        "No major mechanicals, no punctures, everyone seemed to be well prepared with food and drink, and generally enjoyed themselves! Well done, everyone!",
+        "NOTE: No matter how polite we were to folks on the towpaths, we still had 2 grumpy walkers (1 male, 1 female) who insisted they had priority and were just rude and awkward! 1 other dog walker shouted that we were going too fast... I think we were doing about 7mph at the time, with plenty of room! There really is no pleasing some folks!"
+      ],
       "photosUrl": "https://app.box.com/s/5tc7qy9i3ub56gpm6y9gal7x27e8x7at"
     },
     {
