@@ -1,7 +1,7 @@
 const navLinkEls = document.querySelectorAll( '.nav-link' );
 const sectionEls = document.querySelectorAll( '.section' );
 
-// let currentSection = 'hero';
+let currentSection = 'hero';
 window.addEventListener( 'scroll', () => {
     sectionEls.forEach( sectionEl => {
         if ( window.scrollY >= ( sectionEl.offsetTop - sectionEl.clientHeight / 3 )) {
