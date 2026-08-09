@@ -228,10 +228,10 @@
       "destination": "Newbury",
       "distanceMiles": 42,
       "overallTime": "6 hours",
-      "routeMapImage": "img/ride-maps/lunch-at-the-palace.png",
+      "routeMapImage": "img/ride-maps/marmalade-sandwich.jpeg",
       "meetPoint": {
         "name": "Reading",
-        "googleMapsUrl": "https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA",
+        "googleMapsUrl": "https://maps.app.goo.gl/cXQeQQU3Hvym1SAj9",
         "note": "Meet in Reading...Details to below"
       },
       "guidance": [
